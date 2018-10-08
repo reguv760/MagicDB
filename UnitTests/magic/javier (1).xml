@@ -1,0 +1,56 @@
+<!-- ERROR CAN NO LONGER BE REPLICATED: xml tag error, .version CAUSES this tag to be miss id'ed as a data tag, two root trees found -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<card-deck>
+    <!-- DONE - ERROR, MISSING ROOT TAG. Typing leading periods ahead of an open tag causes the error.
+    NOW STRIPPING ALL CHARACTERS PRECEEDING THE OPEN TAG CHAR <, SUCH AS THE PERIODS BELOW -->
+    <!-- DONE - THE COMMENT BELOW, IF IT ENDS IN DOUBLE-> CRASHES THE TOOLS APP WITH VECTOR ITERATOR CANNOT BE INCREMENTED.
+    NOW STRIPPING ALL CHARACTERS FOLLOWING -->
+    <!-- Min 17 Basic Land Cards per deck -->>
+....<card>
+		<!-- ADDED -->
+		<type>BASIC-LAND</type>
+        <land-type>FOREST</land-type>
+        <mana>1</mana>
+        <color>GREEN</color>
+        <!-- DONE - RESTRICTION: THE NODE(S) OF A TREE CANNOT APPEAR ON THE SAME LINE AS THE TREE'S OPEN AND CLOSE TAGS -->
+        <!--description><name>text</name></description-->
+        <!-- DONE - Warning: tag without text -->
+        <!--description></description-->
+		<description>Basic Land - Forest</description>
+        <!--description>
+            <text>Card description</text>
+        </description-->
+    </card>
+    
+    <card>
+        <type>CREATURE</type>
+        <creature-type>DEMON</creature-type>
+        <mana>-9</mana>
+    </card>
+	
+	<card>
+		<type>CREATURE</type>
+		<creature-type>DEMON</creature-type>
+		<description>Demon of Death's Gate</description>
+		<mana>-9</mana>
+		<color>BLACK</color>
+		<effects>
+			<effect>
+				<type>FLYING</type>
+			</effect>
+			<effect>
+				<type>TRAMPLE</type>
+			</effect>
+			<effect>
+				<type>PAY6LIFE</type>
+				<description>You may pay 6 life and sacrifice 3 black creatures rather than pay Demon of Death's Gate MANA cost</description>
+				<sacrifice>
+					<color>BLACK</color>
+					<quantity>3</quantity>
+				</sacrifice>
+			</effect>
+		</effects>
+	</card>
+</card-deck>
+<!--/card-deck1-->

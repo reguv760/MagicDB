@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rules>
+	<card-types>
+		<type>ARTIFACT</type>
+		<type>BASIC_LAND</type>
+		<type>CONSPIRACY</type>
+		<type>CREATURE</type>
+		<type>ENCHANTMENT</type>
+		<type>HOST</type>
+		<type>INSTANT</type>
+		<type>LAND</type>
+		<type>LEGENDARY</type>
+		<type>ONGOING</type>
+		<type>PHENOMENON</type>
+		<type>PLANE</type>
+		<type>PLANESWALKER</type>
+		<type>SCHEME</type>
+		<type>SNOW</type>
+		<type>SORCERY</type>
+		<type>TRIBAL</type>
+		<type>VANGUARD</type>
+	</card-types>
+	<colors>
+		<color>RED</color>
+		<color>BLUE</color>
+		<color>GREEN</color>
+		<color>BLACK</color>
+		<color>WHITE</color>
+		<color>COLORLESS</color>
+	</colors>
+</rules>
